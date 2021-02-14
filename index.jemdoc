@@ -1,3 +1,29 @@
-# jemdoc: menu{MENU}{example.html}
-= jemdoc -- example page
-[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
+# jemdoc: menu{MENU}{index.html}
+= Home
+
+~~~
+{}{img_left}{img/avatar.jpg}{}{150px}{150px}{}
+Marc E. Solèr (🇨🇭)
+
+Computer Science Bachelor Student @ [https://www.zhaw.ch/de/engineering/" ZHAW School of Engineering] \n
+{{<a href="https://twitter.com/m4rcsoler?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @m4rcsoler</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}}
+~~~
+
+== About
+I am currently in my third year of the CS Bachelor programme at ZHAW. My interests include core CS topics, as well as applications of Computer Science in Economy / Finance, Biology, Mathematics and Physics. 
+
+Recently, I became particularly intererested in Quantum Computing and it's applications in the aforementioned topics. I'm also interested in the development of promising of ideas into enterprises. I am strong proponent for more entrepreneurial engagement in Europe, as it is a centre of scientific innovation, but commercialization often happens outside of Europe.
+
+Also, I like spending time on my bike, in my running shoes, on the water or playing the violin (both classical music and art fascinate me).
+
+
+== Interests
+- Quantum Computing
+- Algorithm design and scientific computing
+- Bioinformatics
+- Quantitative finance
+- Economics
+
+== Education
+- BSc in Computer Science, [https://www.zhaw.ch/de/engineering/" ZHAW School of Engineering], 2021 (expected)
+
