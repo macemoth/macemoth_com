@@ -1,0 +1,51 @@
+# jemdoc: menu{MENU}{finance.html}
+= Finance Corner
+
+I have created this site for providing starting material for people interested in \{mathematical | computational | quantitative\} finance. Note that it has neither the goal to be accurate nor complete.
+
+Mathematical finance can be split into:
+
+. Pricing models (i.e. Black-Scholes)
+. Risk management (i.e. portfolio optimisation)
+. Trading strategies
+
+== Getting Started
+
+If you have an endless supply of time, read John C. Hull, /Options, Futures, and Other Derivatives, Global Edition/. Otherwise, the below "glossary" should get you acquainted with some of the basic concepts of the quant trade. The list is a non-exhaustive work in progress and is biased in the author's interest.
+
+Financial markets are supposed to be [https://www.youtube.com/watch?v=fDek6cYijxI chaotic]. In the seventies, academia was quite confident that financial markets process new information immediately (such as news about a company that may drive a stock higher). It concluded that it would therefore be impossible to predict the market with publicly available information, because the news' consequences are immediately absorbed by the market. They called such markets [https://en.wikipedia.org/wiki/Efficient-market_hypothesis efficient markets]. In this view, the market can be represented by a [https://en.wikipedia.org/wiki/Random_walk random walk]. To consistently make profit in an efficient market requires to exploit non-public information (aka insider knowledge) that has not yet been absorbed by the market. Many hedge funds do exactly this (that's my claim).
+
+Not much later, MIT mathematician [https://www.youtube.com/watch?v=6M9YsJKtxyQ James Simons] et al. had the idea to model financial markets mathematically, with tremendous success to this date. By doing so, they directly proved that markets weren't fully efficient, because they operated on information every market participant also had (prices, trade volumina, ...) but were highly profitable. It was the first /quantitative/ hedge fund, today often opposed to the /qualitative/ or /macro/ hedge fund (such as [https://en.wikipedia.org/wiki/Peter_Thiel Peter Thiel's Clarion Fund] that uses "human reasoning" to find investment strategies.
+
+> "My algorithm has always been: You put smart people together, you give  them a lot of freedom, create an atmosphere where everyone talks to everyone else. They're not hiding in the corner with their own little  thing. They talk to everybody else. And you provide the best infrastructure. The best computers and so on that people can work with  and make everyone partners." - James Simons
+
+Today, there are many quantitative hedge funds, such as [https://www.deshaw.com D.E. Shaw], [https://www.twosigma.com Two Sigma], [https://www.janestreet.com Jane Street]) (ironically, D. E. Shaw's step father was strong adherent of the efficient-market hypothesis). Investment banks, although not so enigmatic as hedge funds (and playing with unsuspecting people's money) have recognised the potential of quantitative methods. For example, [https://www.wsj.com/articles/understanding-secdb-goldman-sachss-most-valued-trading-weapon-1473242401 Goldman Sachs Securities DB]) analysed the risk of securities and helped the bank surviving the 2007 financial crisis (while also being one of the culprits of it).
+
+The [https://www.youtube.com/watch?v=TnS8kI_KuJc Black Scholes Formula]) is one of the best known tools in mathematics to find the "correct" price of a financial derivative (they are called derivatives because they derive their price and properties from a stock, and are tradable themselves). The formula can be solved for another variable and given a certain price, the volatility of the derivative can be determined. This way, one can find out what "the market" has deemed to be the [https://www.youtube.com/watch?v=VIHldsSmASU (implied) volatility]).
+
+The formula assumes that the "risky asset" drifts in a [https://en.wikipedia.org/wiki/Brownian_motion Brownian Motion]), which is again a random walk (we already talked abut this!). Because the Black Scholes model is typically not analytically solvable, numerical methods are utilised. One of them is [https://www.youtube.com/watch?v=OgO1gpXSUzU Monte Carlo]) (and back we are in gambling territory 🎲).
+
+A more primitive way to model derivatives are binomial trees, that represent the two outcomes of options (look at [https://www.youtube.com/playlist?list=PL55F11C99198EAE65 Sal Khan's  excellent series about options]) or read Hull's Book P. 34ff).
+
+== Epilogue
+
+When speaking about random walks, the notion of [https://en.wikipedia.org/wiki/Hidden_Markov_model Hidden Markov Models] may come to mind. Their parameters are found using [https://en.wikipedia.org/wiki/Baum–Welch_algorithm Baum-Welch's Algorithm], similar to Gaussian Mixture Models. [https://en.wikipedia.org/wiki/Bayesian_network Bayesian Networks] also sound interesting, as they seem to approximate probabilities instead of computing them exactly.
+
+Recently, quantum computers have been studied to do exactly this Monte Carlo part faster than classical computers (which is highly interesting, and referred below). Also, I wonder whether the Monte Carlo Tree Search (highly effective in Chess programs) or other Learning Algorithms could be used to evaluate binomial trees.
+
+It generally appears that Monte Carlo, Markov and Bayes are all quite interconnected.
+
+== Further Reading and ideas
+
+- Nicholas Nassim Taleb, /The Black Swan/ sheds light on the tails of the normal distribution, with special attention to finance.
+- [https://arxiv.org/pdf/1805.00109 Patrick Rebentrost et al., /Quantum computational finance: Monte Carlo pricing of financial derivatives/] demonstrates how to do the Monte-Carlo part (faster) with a quantum computer. Something I have yet to dive into.
+- [http://www.finmath.net finmath] seems to be an interesting Java implementation of various financial algorithms and data structures. They have interesting examples on their website.
+- [http://www.jquantlib.com/en/latest/ JQuantLib] is another one.
+- The MIT [https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/ Topics in Mathematics with Applications in Finance] course is a nice companion to this
+- [https://www.wired.com/2016/01/the-rise-of-the-artificially-intelligent-hedge-fund/ Wired article] about algorithmic trading and the use of new methods 
+
+## YOLO 🚀🌕 Meme Corner
+
+Do not take these too seriously, though worth a look.
+
+- [https://www.youtube.com/watch?v=8pYgz4YlQnE Barclays Robin Hood Explotation Strategy]
