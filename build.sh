@@ -1,2 +1,2 @@
 sourcefiles=$(ls *.jemdoc)
-python2 jemdoc.py -o www/ -c mesoler.conf $sourcefiles
+python3 jemdoc.py -o www/ -c mesoler.conf $sourcefiles
