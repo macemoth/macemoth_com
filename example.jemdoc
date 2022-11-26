@@ -1,9 +1,9 @@
 # jemdoc: menu{MENU}{example.html}
-= jemdoc -- example page
+= Examples
 
 ~~~
-This page shows example jemdoc source and output side by side. (The spacing of
-the `page' on the left is consequently incorrect.)
+This page shows example jemdoc source and output side by side, as well as the cheat sheet and the syntax extras.
+Since the sources are not available under the original page anymore, I list it here. Credits go to [https://jemnz.com Jacob Mattingley].
 ~~~
 
 ## jemdoc: start now.
@@ -54,7 +54,7 @@ If the first line of the file starts with +\# jemdoc+, special functions like
 </td></tr><tr>
 <td class="leftcell">
 ~~~
-== Example
+=== Example
 Here are some *text* /features/. I could [http://cvxmod.net/ link somewhere] or
 insert a raw link to another page like [download.html].  I could use
 +monospace+, too.
@@ -66,7 +66,7 @@ insert a raw link to another page like [download.html].  I could use
 ~~~
 ~~~
 {}{jemdoc}
-== Example
+=== Example
 Here are some *text* /features/. I could [http://cvxmod.net/ link somewhere] or
 insert a raw link to another page like [download.html].  I could use
 +monospace+, too.
