@@ -1,0 +1,21 @@
+# jemdoc: menu{MENU}{thoughts.html}
+= Reading is Graph Embedding, Thoughts are Vectors
+
+What is the difference between human and computer memory? A typical answer is: computer memory is essentially a long sequence of bytes, and any content on it can be accessed using a single address (although, there are exceptions).
+But human memory is content-addressable. One example is that if you see the face of somebody you know, you instantly recognise the person without having to "look through" the faces of people you know until you have found a match.
+The two architectures have further differences: on a straight line, drawing connections is difficult. By nature, any element on this line has at most two: with the elements left and right of it.
+
+Meanwhile, we can connect ideas and concepts seemingly without limitation in our minds (this is probably one of the most fascinating things our minds are capable of, although it is not always emphasised in education).
+It has also been shown that we are most effective at learning new things when we can connect them to things we already know.
+
+[img{450px} img/thoughts/hofstadter.jpeg From Douglas Hofstadter's _Gödel, Escher, Bach_]
+
+Explaining an abstract idea to somebody else is not always easy. Finding the right introduction, using analogies and introducing the proper 
+
+== Connections emerge in higher dimensions
+
+
+
+== Thinking neural hardware
+
+
