@@ -2,20 +2,17 @@
 
 table#tlayout {
     border: none;
-    border-collapse: separate;
     background: white;
 }
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: Lucida, Inter, sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -24,6 +21,8 @@ body {
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
+	border-right: 1px solid #dddddd;
+    height: 100%;
 }
 
 #layout-menu td {
@@ -55,8 +54,8 @@ pre, tt {
 	font-family: monaco, monospace;
 }
 
-a, a > tt {
-	color: #224b8d;
+h > tt {
+	color: #1141f5;
 	text-decoration: none;
 }
 
@@ -64,24 +63,17 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
-}
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
-	text-decoration: none;
-}
-#layout-menu a:hover {
-	text-decoration: none;
+a, a:visited, a:hover, a:hover{
+	color: #1141f5;
+    text-decoration: none;
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
-	font-weight: bold;
+	font-weight: 700;
+	color: #000;
 }
 
 div.menu-item {
@@ -92,7 +84,6 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -112,27 +103,27 @@ em {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #000;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+    font-weight: 700;
 }
 
 h1 {
-	font-size: 165%;
+	font-size: 200%;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 150%;
 }
 
 h2 + h3 {
@@ -238,7 +229,7 @@ div.codeblock, div.infoblock {
 }
 
 div.blocktitle {
-	font-weight: bold;
+	font-weight: 700;
 	color: #cd7b62;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
@@ -306,7 +297,6 @@ span.comment, span.comment > *, span.string, span.string > * {
 
 #fwtitle #toptitle {
 	padding-left: 0.5em;
-	margin-bottom: 0.5em;
 }
 
 #layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
@@ -345,7 +335,6 @@ td {
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-align: center;
-    border: 1px solid gray;
 }
 
 table + table {
@@ -353,7 +342,7 @@ table + table {
 }
 
 tr.heading {
-    font-weight: bold;
+    font-weight: 700;
     border-bottom: 2px solid black;
 }
 
@@ -364,4 +353,18 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./files/inter.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./files/inter700.woff2') format('woff2');
 }
