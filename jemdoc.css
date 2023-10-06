@@ -237,11 +237,8 @@ div.blocktitle {
 
 div.blockcontent {
 	border: 1px solid silver;
-	padding: 0.3em 0.5em;
-}
-
-div.infoblock > div.blockcontent {
-	background: #ffffee;
+	padding: 0.69em;
+	border-radius: 5px;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
