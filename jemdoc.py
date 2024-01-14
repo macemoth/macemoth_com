@@ -79,7 +79,7 @@ class controlstruct(object):
     self.eqcache = True
     self.eqpackages = []
     self.texlines = []
-    self.analytics = None
+    self.analytics = "https://macemoth.goatcounter.com/count"
     self.eqbd = {} # equation base depth.
     self.baseline = None
 
@@ -167,15 +167,8 @@ def standardconf():
   <body>
   
   [analytics]
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  try {
-      var pageTracker = _gat._getTracker("|");
-      pageTracker._trackPageview();
-  } catch(err) {}</script>
+  <script data-goatcounter="|"
+        async src="//gc.zgo.at/count.js"></script>
   
   [menustart]
   <table summary="Table for page layout." id="tlayout">
