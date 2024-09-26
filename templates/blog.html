@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="container px-4 py-5">
+  <h1>Blog</h1>
+  <div class="row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-7">
+    {% for post in page.posts %}
+      <div class="h-25 mx-10 text-white rounded row my-3"
+        style="background-image: linear-gradient(30deg, rgba(3,64,107,1) 0%, rgba(25,195,124,1) 100%);">
+        <div class=" d-flex flex-column p-5 text-white">
+          <h2 class="display-6 lh-1 fw-bold"><a class="text-white"
+              href="{{post.fname}}.html">{{post.title}}</a></h2>
+          <p>{{post.date}}, {{post.readtime}}</p>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock main %}

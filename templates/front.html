@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="container px-4 py-5">
+    
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-3">
+      <div class="col-10 col-sm-8 col-lg-4">
+        <img src="img/avatar.jpeg" class="d-block mx-lg-auto img-fluid rounded my-3" alt="sugma" width="200" height="200" loading="lazy">
+      </div>
+      <div class="col-lg-5">
+<!--         <img src="img/avatar.jpeg" alt="sugma" width="150" height="150"> -->
+        <h2 class="lh-1 mb-3">{{page.hero_header}}</h2>
+        <p class="lead"> {{page.hero_text}}</p>
+      </div>
+    </div>
+  </div>
+
+  <p> {{page.content}} </p>
+{% endblock main %}

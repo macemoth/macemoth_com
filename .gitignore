@@ -1,2 +1,3 @@
-www/
+static/
 .DS_Store
+venv/

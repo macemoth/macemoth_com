@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="container px-4 py-5">
+
+    {% if page.content %}
+    {{ page.content }}
+    {% for tag in page.tags %}
+        <h5><span class="badge badge-pill badge-primary">{{ tag }}</span></h5>
+    {% endfor %}
+    
+        {% else %}
+    <h1>Customize your own home page</h1>
+    <p>
+        The site is working. Don't forget to customize this homepage with your own. You have 2 choices :
+    </p>
+    <ul>
+        <li><b>1. </b> Create an _index.md document in the content folder</li>
+        <li><b>2. </b> Configure your server to automatically redirect this home page to one of your documentation pages
+        </li>
+    </ul>
+    <p><i class="fa fa-heart fa-4x"></i></p>
+    {% endif %}
+</div>
+
+{% endblock main %}
