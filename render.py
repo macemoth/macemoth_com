@@ -59,7 +59,7 @@ def main(source, target):
 
 
 def initialise_structure(target):
-    for d in ["css", "img", "files", "fonts"]:
+    for d in ["css", "img", "files"]:
         shutil.copytree(d, os.path.join(target, d), dirs_exist_ok=True)
     os.makedirs(os.path.join(target, "blog"), exist_ok=True)
 

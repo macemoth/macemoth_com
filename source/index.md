@@ -2,11 +2,11 @@
 language: en
 author: macemoth
 hero_header: Marc E. Solèr
-hero_text: Cofounder Algolas and IT consultant with ETH juniors
+hero_text: Cofounder @ Algolas and IT consultant @ ETH juniors
 ---
 
 ## About
-I am cofounder of [Algolas](https://algolas.com), a startup that solves business problems using tough-to-beat AI / Software hybrids. Part-time, I do similar things as an IT consultant for [ETH juniors](https://ethjuniors.ch).
+I am cofounder of [Algolas](https://algolas.com), a Swiss startup that provides software engineering as a service and tries to bridge the gap between AI and no-bs software engineering. Part-time, I do similar things as an IT consultant for [ETH juniors](https://ethjuniors.ch).
 In September 2023 I finished my Master's in Computer Science at the University of St. Gallen.
 
 My technical skills include core CS topics, such as developing software and algorithms, information security, machine learning, making IT infrastructure and networks work and some current fancy front- and backend frameworks.
