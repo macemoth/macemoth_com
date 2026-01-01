@@ -1,0 +1,23 @@
+body {
+    background-image: url("brown024.jpg");
+    color: #dcdcdc;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.doors a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #dcdcdc;
+    text-decoration: none;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.doors a:hover {
+    background-color: #565656;
+}
