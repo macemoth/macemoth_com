@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+      
+        <title>
+        Ideas from quantitative finance - macemoth.com
+        </title>
+    </head>
+    <body>
+
+    <nav class=" navbar shadow bg-gradient" id="navbarMain">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="/index.html">
+                    macemoth 🦖
+                </a>
+                <a class="navbar-brand" href="/blog/index.html">
+                  Blog 🐙
+              </a>
+            </div>
+            <div class="navbar ml-auto">
+                
+            </div>
+
+    
+          <ul class="nav nav-pills">
+              
+          </ul>
+        </div>
+    </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                
+<div class="container px-4 py-5">
+
+    
+    <h1>Ideas from quantitative finance</h1>
+<p>This site is a notebook for people interested in {mathematical | computational | quantitative} finance. Note that it has neither the goal to be accurate nor complete. </p>
+<p>Mathematical finance can be split into:</p>
+<ul>
+<li>Pricing models (i.e. Black-Scholes)</li>
+<li>Risk management (i.e. portfolio optimisation)</li>
+<li>Trading strategies</li>
+</ul>
+<h2>Getting Started</h2>
+<p>If you have an endless supply of time, read John C. Hull, <em>Options, Futures, and Other Derivatives, Global Edition</em>. Otherwise, the below "glossary" should get you acquainted with some of the basic concepts of the quant trade. The list is a non-exhaustive work in progress and is biased in the author's interest.</p>
+<p>Financial markets are supposed to be <a href="https://www.youtube.com/watch?v=fDek6cYijxI">chaotic</a>. In the seventies, academia was quite confident that financial markets process new information immediately (such as news about a company that may drive a stock higher). It concluded that it would therefore be impossible to predict the market with publicly available information, because the news' consequences are immediately absorbed by the market. They called such markets <a href="https://en.wikipedia.org/wiki/Efficient-market_hypothesis">efficient markets</a>. In this view, the market can be represented by a <a href="https://en.wikipedia.org/wiki/Random_walk">random walk</a>. To consistently make profit in an efficient market requires exploiting inefficiencies or insider information.</p>
+<p>However,  MIT's <a href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/">Topics in Mathematics with Applications in Finance</a> course suggests that efficient markets are a theoretical construct, and in reality there are inefficiencies exploitable by sophisticated algorithms.</p>
+<p>A more primitive way to model derivatives are binomial trees, that represent the two outcomes of options (look at <a href="https://www.youtube.com/playlist?list=PL55F11C99198EAE65">Sal Khan's excellent series about options</a> or read Hull's Book P. 34ff).</p>
+<h2>Epilogue</h2>
+<p>When speaking about random walks, the notion of <a href="https://en.wikipedia.org/wiki/Hidden_Markov_model">Hidden Markov Models</a> may come to mind. Their parameters are found using <a href="https://en.wikipedia.org/wiki/Baum%E2%80%93Welch_algorithm">Baum-Welch's Algorithm</a>, similar to Gaussian Mixture Models. <a href="https://en.wikipedia.org/wiki/Bayesian_network">Bayesian Networks</a> also sound interesting, as they seem to approximate probabilities instead of computing them exactly.</p>
+<p>Recently, quantum computers have been studied to do exactly this Monte Carlo part faster than classical computers (which is highly interesting, and referred below). Also, I wonder whether the Monte Carlo Tree Search (highly effective in Chess programs) or other Learning Algorithms could be used to evaluate binomial trees.</p>
+<h2>Further Reading and ideas</h2>
+<ul>
+<li>Nicholas Nassim Taleb's, <em>The Black Swan</em>, is a sceptical view on the "standard" mathematical approaches and epistemological problems when modelling reality.</li>
+<li><a href="https://arxiv.org/pdf/1805.00109">Patrick Rebentrost et al., <em>Quantum computational finance: Monte Carlo pricing of financial derivatives</em></a> demonstrates how to do the Monte-Carlo part (faster) with a quantum computer. Something I have yet to dive into.</li>
+<li><a href="http://www.finmath.net">finmath</a> seems to be an interesting Java implementation of various financial algorithms and data structures. They have interesting examples on their website.</li>
+<li><a href="http://www.jquantlib.com/en/latest/">JQuantLib</a> is another one.</li>
+<li>The MIT <a href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/">Topics in Mathematics with Applications in Finance</a> course is a nice companion to this</li>
+<li><a href="https://www.wired.com/2016/01/the-rise-of-the-artificially-intelligent-hedge-fund/">Wired article</a> about algorithmic trading and the use of new methods</li>
+<li>As the financial market is a highly interconnected system, Gaussian models often do not hold (as they arise with independence) ideas from biology and ecology may apply. One paradigm to examine may be <a href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos Theory</a>.</li>
+</ul>
+<h2>YOLO 🚀🌕 Meme Corner</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=8pYgz4YlQnE">Barclays Robin Hood Explotation Strategy</a></li>
+</ul>
+    
+    
+        
+</div>
+
+
+                
+            </div> <!-- /end of row -->
+                
+        </div> <!-- /end of container -->
+        <hr>
+        <footer class="row-cols-sm-2 container py-3">
+        <div class="col mb-3">
+          <ul class="nav">
+            <li class="ms-3">
+              <p>© 2024 <a href="macemoth.com">macemoth</a><p>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    </body>
+</html>

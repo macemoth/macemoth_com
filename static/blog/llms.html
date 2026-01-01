@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+      
+        <title>
+        Large Language Models simulate thinking - macemoth.com
+        </title>
+    </head>
+    <body>
+
+    <nav class=" navbar shadow bg-gradient" id="navbarMain">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="/index.html">
+                    macemoth 🦖
+                </a>
+                <a class="navbar-brand" href="/blog/index.html">
+                  Blog 🐙
+              </a>
+            </div>
+            <div class="navbar ml-auto">
+                
+            </div>
+
+    
+          <ul class="nav nav-pills">
+              
+          </ul>
+        </div>
+    </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                
+<div class="container px-4 py-5">
+
+    
+    <h1>Large Language Models simulate thinking</h1>
+<p>In a recent talk<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, Andrej Karpathy, of one of the co-founders of <em>OpenAI</em>, the organisation behind GPT and ChatGPT, discussed several key differences between large language models (LLMs) such as GPT or Llama to human thinking.
+There is a deeper rationale behind the discussion -- as LLMs are marketed as the spearhead of "Artificial Intelligence", it makes sense comparing them to the best known "Natural Intelligence".
+This article is a reflection on the talk, summarising some of the most interesting questions.</p>
+<p>More striking than the differences, many of which have been pointed out in the recent months, are the similarities. That despite the simple abstraction<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> of predicting the next character based on the previous context, the appearance of thinking emerges. That, without ever having been specifically instructed to do so, the models can be tricked into being personal assistants in a dialogue scenario.</p>
+<h2>What's the big deal?</h2>
+<p>Do the models fabricate information? Yes. Are they overparametrised? Probably. Can they compete with humans in general tasks?
+Also yes. GPT-4, OpenAI's most recent model, managed to rank among the best 20% of test takers in a wide range of University-level exams. It is knowledgeable about a comprehensive volume of knowledge (i.e. give a list of technologies of <em>Sid Meier's Alpha Centauri</em> along with the in-game description), summarise mathematical research papers<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and write correct computer code from a natural language description.</p>
+<h2>Thought chains</h2>
+<p>Some of the notable differences between LLM text generation and human thought are the lack of reflection, not knowing what they don't know, or correcting mistakes while thinking (or generating text, respectively).
+Yet, similarly to being an assistant, the models can be tricked into producing a chain of thought while writing text by prompting it to process step-by-step.
+By forcing the the model produce a chain of thought, some of the previous problems can be fixed. More importantly, the model simulates human thinking by producing what Karpathy calls "internal monologue".</p>
+<p>This is reminiscent to physicist Enrico Fermi's question: How many piano tuners are there in Chicago?
+Typically, one can not answer the question directly, but one can arrive at a guess by combining known things, such as the population of Chicago, the amount of pianos, the time it takes to tune a piano, etc.</p>
+<p>After all, the LLM's only inherent goal is to faithfully reproduce the training data, not necessarily be reflective or critical. But if the models are asked for, they can do so, just as they become assistants after they are asked to (ChatGPT does this in the background).
+This coincides with the observation that LLMs produce better answers when provided with much text from an user - the model just needs to be brought into the right state of mind.</p>
+<h2>The way ahead</h2>
+<p>Instructing LLMs to do things that humans do intuitively may not be the mitigation to the problems of current-day LLMs.
+Combining a thought with a previous experience that does not appear in the recent context is more difficult to deal with - although not impossible.
+Enhancing the working memory of LLMs with data from the Internet, own documents, databases and vector stores are promising approaches.
+<a href="https://gpt-index.readthedocs.io">LLamaIndex</a> and <a href="https://langchain.readthedocs.io">LangChain</a> provide powerful connectors to data sources and sophisticated abstractions.</p>
+<p>Whether LLMs will be able to perform non-obvious "concept-jumps" (a quality associated with scientific discovery and invention) is still an open question, and the answer will likely either require or bring a deeper undestanding of intelligence.
+For the moment, let's ride the wave and see how far LLMs will bring us in computational intelligence.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Andrej Karpathy, <a href="https://karpathy.ai/stateofgpt.pdf">State of GPT, May 2023</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Generating text by predicting the next characters is not new. In the 1980s, Bell Labs scientists <a href="https://en.wikipedia.org/wiki/Mark_V._Shaney">faked a human user in newsgroups</a> by simply predicting a likely word from a single preceding word. The texts are surprisingly consistent.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Terence Tao, <a href="https://unlocked.microsoft.com/ai-anthology/terence-tao/">Embracing change and resetting expectations</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    
+    
+        
+</div>
+
+
+                
+            </div> <!-- /end of row -->
+                
+        </div> <!-- /end of container -->
+        <hr>
+        <footer class="row-cols-sm-2 container py-3">
+        <div class="col mb-3">
+          <ul class="nav">
+            <li class="ms-3">
+              <p>© 2024 <a href="macemoth.com">macemoth</a><p>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    </body>
+</html>
